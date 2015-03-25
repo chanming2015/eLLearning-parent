@@ -8,7 +8,7 @@
 
 	<!-- 配置继承关系 -->
 	<modules>
-		<module>../basic-hibernate</module>
+		<module>../../basic-hibernate</module>
 	</modules>
 
 	<!-- 公共属性 -->
@@ -25,12 +25,35 @@
 				<version>4.10</version>
 				<scope>test</scope>
 			</dependency>
-			<!-- hibernate核心包 -->
+
 			<dependency>
-				<groupId>org.hibernate</groupId>
-				<artifactId>hibernate-core</artifactId>
-				<version>4.2.0.Final</version>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>3.2.2.RELEASE</version>
+				<scope>test</scope>
 			</dependency>
+
+			<dependency>
+				<groupId>org.easymock</groupId>
+				<artifactId>easymock</artifactId>
+				<version>3.1</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.dbunit</groupId>
+				<artifactId>dbunit</artifactId>
+				<version>2.2</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.github.springtestdbunit</groupId>
+				<artifactId>spring-test-dbunit</artifactId>
+				<version>1.0.0</version>
+				<scope>test</scope>
+			</dependency>
+
 			<!-- inject注解包 -->
 			<dependency>
 				<groupId>javax.inject</groupId>
@@ -84,6 +107,19 @@
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjweaver</artifactId>
 				<version>1.7.2</version>
+			</dependency>
+
+			<!-- hibernate核心包 -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>4.2.0.Final</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>1.7.5</version>
 			</dependency>
 
 		</dependencies>
