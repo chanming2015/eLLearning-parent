@@ -7,46 +7,49 @@
 	<packaging>pom</packaging>
 
 	<!-- 配置继承关系 -->
+	<!-- eLearning-parent中包含的模块 ：备注：始终要注意模块目录的的关系-->
 	<modules>
-		<module>../../basic-hibernate</module>
+		<module>../../basic-hibernate/basic-hibernate</module>
 	</modules>
 
-	<!-- 公共属性 -->
+	<!-- 项目中的公共属性值 -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<!-- 依赖管理 -->
 	<dependencyManagement>
 		<dependencies>
-			<!-- 测试的包 -->
+			<!-- ****************************测试的包****************************** -->
+			<!-- JUnit单元测试框架 -->
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>4.10</version>
 				<scope>test</scope>
 			</dependency>
-
+			<!-- Spring整合JUnit单元测试框架 -->
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-test</artifactId>
 				<version>3.2.2.RELEASE</version>
 				<scope>test</scope>
 			</dependency>
-
+			<!-- 基于service层的测试包  -->
 			<dependency>
 				<groupId>org.easymock</groupId>
 				<artifactId>easymock</artifactId>
 				<version>3.1</version>
 				<scope>test</scope>
 			</dependency>
-
+			<!-- 基于dao层的DBunit的测试框架 -->
 			<dependency>
 				<groupId>org.dbunit</groupId>
 				<artifactId>dbunit</artifactId>
 				<version>2.2</version>
 				<scope>test</scope>
 			</dependency>
-
+			<!-- Spring整合DBunit数据库的单元测试框架 -->
 			<dependency>
 				<groupId>com.github.springtestdbunit</groupId>
 				<artifactId>spring-test-dbunit</artifactId>
@@ -72,7 +75,7 @@
 				<artifactId>commons-dbcp</artifactId>
 				<version>1.4</version>
 			</dependency>
-			<!-- spring ********************************************************** -->
+			<!-- ********************************************spring ********************************************************** -->
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-core</artifactId>
@@ -115,7 +118,7 @@
 				<artifactId>hibernate-core</artifactId>
 				<version>4.2.0.Final</version>
 			</dependency>
-
+			<!-- slf4j日志组件 -->
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
