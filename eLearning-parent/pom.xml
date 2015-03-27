@@ -7,9 +7,10 @@
 	<packaging>pom</packaging>
 
 	<!-- 配置继承关系 -->
-	<!-- eLearning-parent中包含的模块 ：备注：始终要注意模块目录的的关系-->
+	<!-- eLearning-parent中包含的模块 ：备注：始终要注意模块目录的的关系 -->
 	<modules>
 		<module>../../basic-hibernate/basic-hibernate</module>
+		<module>../../eLearning-core/eLearning-core</module>
 	</modules>
 
 	<!-- 项目中的公共属性值 -->
@@ -35,7 +36,7 @@
 				<version>3.2.2.RELEASE</version>
 				<scope>test</scope>
 			</dependency>
-			<!-- 基于service层的测试包  -->
+			<!-- 基于service层的测试包 -->
 			<dependency>
 				<groupId>org.easymock</groupId>
 				<artifactId>easymock</artifactId>
@@ -123,6 +124,25 @@
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
 				<version>1.7.5</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.dyr.xms.test</groupId>
+				<artifactId>basic-hibernate</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<!-- 验证组件 -->
+			<dependency>
+				<groupId>org.wicketstuff</groupId>
+				<artifactId>jsr303</artifactId>
+				<version>1.5-RC5.1</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-validator</artifactId>
+				<version>4.3.1.Final</version>
 			</dependency>
 
 		</dependencies>
