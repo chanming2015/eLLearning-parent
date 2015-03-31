@@ -125,7 +125,8 @@
 				<artifactId>slf4j-api</artifactId>
 				<version>1.7.5</version>
 			</dependency>
-
+			
+			<!-- 自定义的basic-Hibernate模板 -->
 			<dependency>
 				<groupId>com.dyr.xms.test</groupId>
 				<artifactId>basic-hibernate</artifactId>
