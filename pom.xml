@@ -9,8 +9,8 @@
 	<!-- 配置继承关系 -->
 	<!-- eLearning-parent中包含的模块 ：备注：始终要注意模块目录的的关系 -->
 	<modules>
-		<module>../../basic-hibernate/basic-hibernate</module>
-		<module>../../eLearning-core/eLearning-core</module>
+		<module>../basic-hibernate</module>
+		<module>../eLearning-core</module>
 	</modules>
 
 	<!-- 项目中的公共属性值 -->
